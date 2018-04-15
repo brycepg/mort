@@ -1,0 +1,7 @@
+.*.sw*
+*.pyc
+.tox
+.pytest_cache
+MANIFEST
+*.egg-info
+htmlcov
