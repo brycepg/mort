@@ -1,5 +1,6 @@
-[![GitHub license](https://img.shields.io/github/license/brycepg/mort.svg)](https://github.com/brycepg/mort/blob/master/LICENSE)
 ![PyPI](https://img.shields.io/pypi/v/mort.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/mort.svg)
+[![GitHub license](https://img.shields.io/github/license/brycepg/mort.svg)](https://github.com/brycepg/mort/blob/master/LICENSE)
 
 
 Start debugging on exception. No code changes necessary
