@@ -31,7 +31,7 @@ def _get_version():
 version = _get_version()
 setup(name=name,
       version=version,
-      description='Run multiple modules with the same interpreter',
+      description='Debug on exception',
       author='Bryce Guinta',
       author_email='contact@bryceguinta.me',
       long_description=long_description,
