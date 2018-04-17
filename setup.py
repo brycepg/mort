@@ -1,5 +1,8 @@
 import os
 import sys
+import re
+
+name = "mort"
 
 if sys.version_info < (3,4):
     raise Exception("Requires Python3.4+")
@@ -13,10 +16,21 @@ except FileNotFoundError:
     # It's not important so ignore for now
     long_description = ""
 
-name = "mort"
+def _get_version():
+    VERSIONFILE="{name}/__init__.py".format(name=name)
+    with open(VERSIONFILE) as fh:
+        verstrline = fh.read()
+    VSRE = r"^__version__ *= *(.*)"
+    mo = re.search(VSRE, verstrline, re.M)
+    if mo:
+        verstr = mo.group(1).strip("\"\'")
+    else:
+        raise Exception("Unable to find version string in %s." % (VERSIONFILE,))
+    return verstr
 
+version = _get_version()
 setup(name=name,
-      version="0.9.0",
+      version=version,
       description='Run multiple modules with the same interpreter',
       author='Bryce Guinta',
       author_email='contact@bryceguinta.me',
