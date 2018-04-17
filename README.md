@@ -1,3 +1,7 @@
+[![GitHub license](https://img.shields.io/github/license/brycepg/mort.svg)](https://github.com/brycepg/mort/blob/master/LICENSE)
+![PyPI](https://img.shields.io/pypi/v/mort.svg)
+
+
 Start debugging on exception. No code changes necessary
 
 # Installation
