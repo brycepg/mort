@@ -16,3 +16,9 @@ Invoke mort on any file or module you'd like to debug
     mort file/to/debug.py
 
 pdb will be invoked when an exception occurs.
+
+## Use with an entry point
+
+You can use mort to debug an exception in a python program if it has a python entry point:
+
+    mort "$(which <your-entry-point>) [possible arguments]"
